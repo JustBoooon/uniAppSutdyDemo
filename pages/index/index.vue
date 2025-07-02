@@ -1,7 +1,7 @@
 <template>
-	<swiper class="banner">
+	<swiper class="banner" indicator-dots autoplay :circular="true">
 		<swiper-item v-for="item in pics" :key="item.id">
-			<image @tap="previewImage(item.url)" :src="item.url" mode=""></image>
+			<image @tap="previewImage(item.url)" :src="item.url"></image>
 		</swiper-item>
 	</swiper>
 </template>
